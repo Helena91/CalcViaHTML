@@ -1,0 +1,26 @@
+body {
+    background-color: lightpink;
+    background-repeat:no-repeat;
+  }
+  
+  h1 {
+      color: black;
+      text-align: center;
+  }
+  
+  
+  #buttons {
+      margin-top: 30px;
+      margin-left: 55px;
+  }
+  
+  #results {
+      font-size: 30px;
+          margin-top: 110px;
+          margin-left: 100px;
+  }
+  
+  p {
+      font-family: verdana;
+      font-size: 20px;
+  }

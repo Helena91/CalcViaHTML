@@ -1,111 +1,44 @@
 ﻿<!DOCTYPE html>
 <html>
-
 <head>
-<style>
-body {
-    background-color: lightpink;
-background-repeat:no-repeat;
-}
-
-h1 {
-    color: black;
-    text-align: center;
-}
-
-
-#buttons {
-    margin-top: 30px;
-    margin-left: 55px;
-}
-
-#results {
-	font-size: 30px;
-    	margin-top: 110px;
-    	margin-left: 100px;
-}
-
-p {
-    font-family: verdana;
-    font-size: 20px;
-}
-</style>
-
-<script>
-var y;
-
-function myFunc(x) {
-var z;
-// if x is a number, then store it into y
-if (parseInt(x, 10))
-{
-document.getElementById("results").innerHTML = x;
-}
-// else, then it is an operator
-else {
-if(y == "+"){
-	z = x + y;
-	document.getElementById("operator").innerHTML;
-}
-else if (y == "-"){}
-else if (y == "*"){}
-else if (y == "/"){}
-// then it is a number or asking for results
-else {
-    //document.getElementById("results").innerHTML = x;
-if (y == "=") {}
-}
-}
-}
-</script>
-
-
+  <link rel="stylesheet" href="styles.css">
 </head>
 
-<body background="C:\Users\helen\Documents\CALC\calculator\frame.png">
-<h1>Helen's First Calculator using HTML/CSS/JavaScript</h1>
+<body background="calculator\frame.png">
+  <h1>Helen's First Calculator using HTML/CSS/JavaScript</h1>
 
-<div id="results">Results</div>
+  <div id="results">Results</div>
+  <div id="operator">operator</div>
+  <div id="operand">operand</div>
 
-<script> 
-document.write(document.getElementById("results").innerHTML);
-document.write(document.getElementById("operator").innerHTML);
-document.write(document.getElementById("operand").innerHTML);
-</script>
-
-<div id="operator">operator</div>
-<div id="operand">operand</div>
-
-<div id="buttons">
-<table>
-<tr>
-<td><input type="image" src="C:\Users\helen\Documents\CALC\calculator\button7.png" onclick=myFunc(7) /></td>
-<td><input type="image" src="C:\Users\helen\Documents\CALC\calculator\button8.png" onclick=myFunc(8) /></td>
-<td><input type="image" src="C:\Users\helen\Documents\CALC\calculator\button9.png" onclick=myFunc(9) /></td>
-<td><input type="image" src="C:\Users\helen\Documents\CALC\calculator\buttonClear.png" onclick=myFunc(0) /></td>
-</tr>
-<tr>
-<td><input type="image" src="C:\Users\helen\Documents\CALC\calculator\button4.png" onclick=myFunc(4) /></td>
-<td><input type="image" src="C:\Users\helen\Documents\CALC\calculator\button5.png" onclick=myFunc(5) /></td>
-<td><input type="image" src="C:\Users\helen\Documents\CALC\calculator\button6.png" onclick=myFunc(6) /></td>
-<td><input type="image" src="C:\Users\helen\Documents\CALC\calculator\buttonMinus.png" onclick=myFunc("-") /></td>
-</tr>
-<tr>
-<td><input type="image" src="C:\Users\helen\Documents\CALC\calculator\button1.png" onclick=myFunc(1) /></td>
-<td><input type="image" src="C:\Users\helen\Documents\CALC\calculator\button2.png" onclick=myFunc(2) /></td>
-<td><input type="image" src="C:\Users\helen\Documents\CALC\calculator\button3.png" onclick=myFunc(3) /></td>
-<td><input type="image" src="C:\Users\helen\Documents\CALC\calculator\buttonPlus.png" onclick=myFunc("+") /></td>
-</tr>
-<tr>
-<td><input type="image" src="C:\Users\helen\Documents\CALC\calculator\buttonDiv.png" onclick=myFunc("/") /></td>
-<td><input type="image" src="C:\Users\helen\Documents\CALC\calculator\button0.png" onclick=myFunc(0) /></td>
-<td><input type="image" src="C:\Users\helen\Documents\CALC\calculator\buttonMult.png" onclick=myFunc("*") /></td>
-<td><input type="image" src="C:\Users\helen\Documents\CALC\calculator\buttonEqual.png" onclick=myFunc("=") /></td>
-</tr>
-</table>
+  <div id="buttons">
+  <table>
+    <tr>
+      <td><input type="image" src="calculator\button7.png" onclick="myFunc(7)" /></td>
+      <td><input type="image" src="calculator\button8.png" onclick="myFunc(8)" /></td>
+     <td><input type="image" src="calculator\button9.png" onclick="myFunc(9)" /></td>
+     <td><input type="image" src="calculator\buttonClear.png" onclick="myFunc(0)" /></td>
+    </tr>
+    <tr>
+      <td><input type="image" src="calculator\button4.png" onclick="myFunc(4)" /></td>
+      <td><input type="image" src="calculator\button5.png" onclick="myFunc(5)" /></td>
+      <td><input type="image" src="calculator\button6.png" onclick="myFunc(6)" /></td>
+      <td><input type="image" src="calculator\buttonMinus.png" onclick="myFunc('-')" /></td>
+    </tr>
+    <tr>
+      <td><input type="image" src="calculator\button1.png" onclick="myFunc(1)" /></td>
+      <td><input type="image" src="calculator\button2.png" onclick="myFunc(2)" /></td>
+      <td><input type="image" src="calculator\button3.png" onclick="myFunc(3)" /></td>
+      <td><input type="image" src="calculator\buttonPlus.png" onclick="myFunc('+')" /></td>
+    </tr>
+    <tr>
+      <td><input type="image" src="calculator\buttonDiv.png" onclick="myFunc('/')" /></td>
+      <td><input type="image" src="calculator\button0.png" onclick="myFunc(0)" /></td>
+      <td><input type="image" src="calculator\buttonMult.png" onclick="myFunc('*')" /></td>
+      <td><input type="image" src="calculator\buttonEqual.png" onclick="myFunc('=')" /></td>
+    </tr>
+  </table>
 </div>
-
-
-
+<script src="myScript.js"></script>
 </body>
 </html>
